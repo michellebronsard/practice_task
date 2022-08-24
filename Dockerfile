@@ -30,10 +30,6 @@ RUN rm -f conda.sh
 RUN /root/miniconda3/bin/conda init bash
 ############### install Conda
 
-############### install Micro
-RUN curl https://getmic.ro | bash
-############### install Micro
-
 # https://conda-forge.org/docs/user/tipsandtricks.html
 # Change channel priority setting to strict (this is robust to having Python and R dependencies simultaneously)
 RUN /root/miniconda3/bin/conda config --set channel_priority strict
@@ -46,6 +42,8 @@ RUN mkdir /usr/dropbox
 
 RUN --mount=type=secret,id=statalic,dst=/Applications/Stata/stata.lic \
     /usr/local/stata/stata-mp do /code/setup.do
+
+RUN cd 
 
 # run the master file
 ENTRYPOINT ["/bin/bash"]

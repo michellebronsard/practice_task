@@ -1,8 +1,6 @@
 #!/bin/bash
-
-TAG=$(date +%F)
-MYHUBID=dataeditors
-MYIMG=stata${VERSION}
+MYHUBID=jccisneros
+MYIMG=template
 
 docker image rm $MYHUBID/${MYIMG}:$TAG
 
