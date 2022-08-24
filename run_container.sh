@@ -12,4 +12,5 @@ docker run -it --rm \
   -v "${DROPBOX}":/usr/dropbox \
   -v "${GITHUB_KEY}":/root/.ssh \
   -v "$(pwd)":/root/template \
+  -w /root/template \
   $MYHUBID/${MYIMG}
