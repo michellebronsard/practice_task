@@ -13,4 +13,4 @@ docker run -it --rm \
   -v "${GITHUB_KEY}":/root/.ssh \
   -v "$(pwd)":/root/template \
   -w /root/template \
-  $MYHUBID/${MYIMG}
+  $MYHUBID/${MYIMG} -; echo "Container removed"
