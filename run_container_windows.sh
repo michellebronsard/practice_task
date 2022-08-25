@@ -10,4 +10,4 @@ docker run -it --rm --read-only -v "$(pwd)":/root/template \
     -v "${GITHUB}":/root/.ssh \
     -v "${STATALIC}":/usr/local/stata/stata.lic \
     -v "${DROPBOX}":/usr/dropbox \
-    -w /root/template jccisneros/template -; echo "Container removed"
+    -w /root/template $MYHUBID/${MYIMG} -; echo "Container removed"
