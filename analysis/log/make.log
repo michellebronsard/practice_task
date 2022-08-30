@@ -1,19 +1,19 @@
 --------------------------------------------------------------------------------
-Makelog started: 2021-09-13 14:22:45
-Working directory: /Users/zahedian/Documents/template/analysis
+Makelog started: 2022-08-30 07:56:30
+Working directory: /home/statauser/template/analysis
 --------------------------------------------------------------------------------
 Input links successfully created!
 External links successfully created!
 Source logs successfully written!
 WARNING! The following target files have been modified according to git status:
-/Users/zahedian/Documents/template/data/output/data_cleaned.csv
-Executing command: `python  "/Users/zahedian/Documents/template/analysis/code/analyze_data.py" `
-/usr/local/Caskroom/miniconda/base/envs/template/lib/python3.7/site-packages/linearmodels/shared/exceptions.py:35: MissingValueWarning: 
+/home/statauser/template/data/output/data_cleaned.csv
+Executing command: `python  "/home/statauser/template/analysis/code/analyze_data.py" `
+/home/statauser/miniconda3/envs/template/lib/python3.7/site-packages/linearmodels/shared/exceptions.py:35: MissingValueWarning: 
 Inputs contain missing values. Dropping rows with missing observations.
   warnings.warn(missing_value_warning_msg, MissingValueWarning)
 
 Output logs successfully written!
 --------------------------------------------------------------------------------
-Makelog ended: 2021-09-13 14:22:50
-Working directory: /Users/zahedian/Documents/template/analysis
+Makelog ended: 2022-08-30 07:56:36
+Working directory: /home/statauser/template/analysis
 --------------------------------------------------------------------------------

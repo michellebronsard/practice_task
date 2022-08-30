@@ -1,4 +1,4 @@
 destination | source
-input/lib | /Users/zahedian/Documents/template/lib
-input/tv.csv | /Users/zahedian/Documents/template/raw/tv.csv
-input/chips.csv | /Users/zahedian/Documents/template/raw/chips.csv
+input/lib | /home/statauser/template/lib
+input/tv.csv | /home/statauser/template/raw/tv.csv
+input/chips.csv | /home/statauser/template/raw/chips.csv

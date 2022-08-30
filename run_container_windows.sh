@@ -6,8 +6,10 @@ STATALIC="/mnt/c/Program Files/Stata17/stata.lic"
 DROPBOX="/mnt/c/Users/$WINDOWS_USER/Dropbox (GSLab)"
 GITHUB="/mnt/c/Users/$WINDOWS_USER/.ssh"
 
-docker run -it --rm --read-only -v "$(pwd)":/root/template \
-    -v "${GITHUB}":/root/.ssh \
-    -v "${STATALIC}":/usr/local/stata/stata.lic \
-    -v "${DROPBOX}":/usr/dropbox \
-    -w /root/template $MYHUBID/${MYIMG} -; echo "Container removed"
+docker run -it --rm \
+  --read-only -v "${STATALIC}":/usr/local/stata/stata.lic \
+  --read-only -v "${DROPBOX}":/home/statauser/dropbox \
+  --read-only -v "${GITHUB_KEY}":/home/statauser/.ssh \
+  -v "$(pwd)":/home/statauser/template \
+  -w /home/statauser/template \
+  $MYHUBID/${MYIMG} -; echo "Container removed"
