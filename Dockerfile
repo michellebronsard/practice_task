@@ -6,7 +6,7 @@ USER root
 ARG DEBIAN_FRONTEND=noninteractive
 RUN cd /home/statauser
 
-############### install preliminaries
+############### install required software (Linux Debian)
 RUN apt-get update \
     && apt-get install tzdata --yes \
     && apt-get install wget --yes \
@@ -32,7 +32,6 @@ RUN /home/statauser/miniconda3/bin/conda config --set channel_priority strict
 
 # https://stackoverflow.com/questions/20635472/using-the-run-instruction-in-a-dockerfile-with-source-does-not-work
 RUN /home/statauser/miniconda3/bin/conda env create -f conda_env.yaml
-
 ENV PATH "$PATH:/home/statauser/miniconda3/bin"
 
 # Create required template directories and make sure user is owner
@@ -52,6 +51,7 @@ RUN --mount=type=secret,id=statalic,dst=/Applications/Stata/stata.lic \
 # Make user root writable and set working directory
 WORKDIR /home/statauser/template
 
+# Change back to non-root user
 USER statauser:stata
 
 # Initialize conda and restart shell
