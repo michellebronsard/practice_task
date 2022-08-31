@@ -1,12 +1,11 @@
 --------------------------------------------------------------------------------
-Makelog started: 2022-08-30 07:56:36
+Makelog started: 2022-08-31 08:33:29
 Working directory: /home/statauser/template/paper_slides
 --------------------------------------------------------------------------------
 Input copies successfully created!
 External copies successfully created!
 Source logs successfully written!
 WARNING! The following target files have been modified according to git status:
-/home/statauser/template/analysis/output/regression.csv
 /home/statauser/template/data/output/chips_sold.pdf
 Executing command: `lyx -e pdf2 "/home/statauser/template/paper_slides/code/paper.lyx"`
 This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex)
@@ -34,7 +33,6 @@ checking for a java interpreter...
 +checking for "java"...  no
 checking for a perl interpreter...
 +checking for "perl"...  yes
-/bin/sh: 1: inkscape: not found
 checking for a Tgif viewer and editor...
 +checking for "tgif"...  no
 checking for a FIG viewer and editor...
@@ -42,6 +40,7 @@ checking for a FIG viewer and editor...
 checking for a Dia viewer and editor...
 +checking for "dia"...  no
 checking for an OpenDocument drawing viewer and editor...
++checking for "xdg-open"...  yes
 +checking for "libreoffice"...  no
 +checking for "lodraw"...  no
 +checking for "ooffice"...  no
@@ -54,6 +53,7 @@ checking for a FEN viewer and editor...
 checking for a SVG viewer and editor...
 +checking for "inkscape"...  no
 checking for a raster image viewer...
++checking for "xdg-open"...  yes
 +checking for "xv"...  no
 +checking for "gwenview"...  no
 +checking for "kview"...  no
@@ -62,13 +62,13 @@ checking for a raster image viewer...
 +checking for "ristretto"...  no
 +checking for "gpicview"...  no
 +checking for "lximage-qt"...  no
-+checking for "xdg-open"...  yes
 +checking for "gimp-remote"...  no
 +checking for "gimp"...  no
 checking for a raster image editor...
 +checking for "gimp-remote"...  no
 +checking for "gimp"...  no
 checking for a text editor...
++checking for "xdg-open"...  yes
 +checking for "xemacs"...  no
 +checking for "gvim"...  no
 +checking for "kedit"...  no
@@ -128,21 +128,23 @@ checking for a BibTeX editor...
 +checking for "leafpad"...  no
 +checking for "mousepad"...  no
 checking for a Postscript previewer...
++checking for "xdg-open"...  yes
 +checking for "kghostview"...  no
 +checking for "okular"...  no
 +checking for "qpdfview"...  no
-+checking for "evince"...  no
++checking for "evince"...  yes
 +checking for "xreader"...  no
 +checking for "gv"...  no
 +checking for "ghostview"...  no
 +checking for "gsview64"...  no
 +checking for "gsview32"...  no
 checking for a PDF previewer...
++checking for "xdg-open"...  yes
 +checking for "pdfview"...  no
 +checking for "kpdf"...  no
 +checking for "okular"...  no
 +checking for "qpdfview"...  no
-+checking for "evince"...  no
++checking for "evince"...  yes
 +checking for "xreader"...  no
 +checking for "kghostview"...  no
 +checking for "xpdf"...  no
@@ -159,7 +161,7 @@ checking for a DVI previewer...
 +checking for "xdvi"...  yes
 +checking for "kdvi"...  no
 +checking for "okular"...  no
-+checking for "evince"...  no
++checking for "evince"...  yes
 +checking for "xreader"...  no
 +checking for "yap"...  no
 +checking for "dviout"...  no
@@ -459,8 +461,7 @@ checking LaTeX configuration...  default values
 	done
 checking LaTeX configuration... 	auto
 +Inspecting your LaTeX configuration.
-+checking for LaTeX version... 2020-02-02
-+checking for LaTeX version at least as of 2019/10/01... yes
++checking for LaTeX version... 2020-02-02 L3 programming layer <2020-02-14>
 +checking for available hyphenation patterns...
 +checking for default encoding (this may take a long time)
 +  checking for ec fonts... yes
@@ -701,8 +702,7 @@ checking LaTeX configuration... 	auto
 +checking for document class agutex [agutex]... no
 +checking for document class amsart [amsart]... yes
 +checking for document class amsbook [amsbook]... yes
-+checking for document class apa6 [apa6]... no
-+checking for document class apa7 [apa7]... no
++checking for document class apa6 [apa6,apacite.sty,endfloat.sty,endnotes.sty,f
 +checking for document class apa [apa,apacite.sty,endfloat.sty,endnotes.sty,flu
 +checking for document class arab-article [arabart,arabrep,altxext.sty,arabext.
 +checking for document class article-beamer [article,beamerarticle.sty,keyval.s
@@ -775,7 +775,6 @@ checking LaTeX configuration... 	auto
 +checking for document class recipebook [scrbook]... yes
 +checking for document class report [report]... yes
 +checking for document class revtex4-1 [revtex4-1,natbib.sty,revsymb4-1.sty,tex
-+checking for document class revtex4-2 [revtex4-2,natbib.sty,revsymb4-2.sty,tex
 +checking for document class revtex4 [revtex4,natbib.sty,revsymb.sty]... no
 +checking for document class revtex [revtex,revtex.sty]... no
 +checking for document class sciposter [sciposter,sectionbox.sty,wallpaper.sty]
@@ -871,6 +870,6 @@ L3 programming layer <2020-02-14>
 
 Output logs successfully written!
 --------------------------------------------------------------------------------
-Makelog ended: 2022-08-30 07:56:47
+Makelog ended: 2022-08-31 08:33:37
 Working directory: /home/statauser/template/paper_slides
 --------------------------------------------------------------------------------

@@ -1,12 +1,10 @@
 --------------------------------------------------------------------------------
-Makelog started: 2022-08-30 07:56:30
+Makelog started: 2022-08-31 08:33:20
 Working directory: /home/statauser/template/analysis
 --------------------------------------------------------------------------------
 Input links successfully created!
 External links successfully created!
 Source logs successfully written!
-WARNING! The following target files have been modified according to git status:
-/home/statauser/template/data/output/data_cleaned.csv
 Executing command: `python  "/home/statauser/template/analysis/code/analyze_data.py" `
 /home/statauser/miniconda3/envs/template/lib/python3.7/site-packages/linearmodels/shared/exceptions.py:35: MissingValueWarning: 
 Inputs contain missing values. Dropping rows with missing observations.
@@ -14,6 +12,6 @@ Inputs contain missing values. Dropping rows with missing observations.
 
 Output logs successfully written!
 --------------------------------------------------------------------------------
-Makelog ended: 2022-08-30 07:56:36
+Makelog ended: 2022-08-31 08:33:29
 Working directory: /home/statauser/template/analysis
 --------------------------------------------------------------------------------
