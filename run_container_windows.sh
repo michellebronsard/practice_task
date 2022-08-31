@@ -7,9 +7,9 @@ DROPBOX="/mnt/c/Users/$WINDOWS_USER/Dropbox (GSLab)"
 GITHUB="/mnt/c/Users/$WINDOWS_USER/.ssh"
 
 docker run -it --rm \
-  --read-only -v "${STATALIC}":/usr/local/stata/stata.lic \
-  --read-only -v "${DROPBOX}":/home/statauser/dropbox \
-  --read-only -v "${GITHUB_KEY}":/home/statauser/.ssh \
+  --read-only -v "${STATALIC}":/usr/local/stata/stata.lic:ro \
+  --read-only -v "${DROPBOX}":/home/statauser/dropbox:ro \
+  --read-only -v "${GITHUB_KEY}":/home/statauser/.ssh:ro \
   -v "$(pwd)":/home/statauser/template \
   -w /home/statauser/template \
   $MYHUBID/${MYIMG} -; echo "Container removed"
