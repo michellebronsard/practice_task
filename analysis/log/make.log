@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
-Makelog started: 2022-08-31 08:33:20
+Makelog started: 2022-09-01 21:10:43
 Working directory: /home/statauser/template/analysis
 --------------------------------------------------------------------------------
 Input links successfully created!
@@ -12,6 +12,6 @@ Inputs contain missing values. Dropping rows with missing observations.
 
 Output logs successfully written!
 --------------------------------------------------------------------------------
-Makelog ended: 2022-08-31 08:33:29
+Makelog ended: 2022-09-01 21:10:48
 Working directory: /home/statauser/template/analysis
 --------------------------------------------------------------------------------

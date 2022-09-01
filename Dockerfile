@@ -9,6 +9,7 @@ RUN cd /home/statauser
 ############### install required software (Linux Debian)
 RUN apt-get update \
     && apt-get install tzdata --yes \
+    && apt-get install binutils --yes \
     && apt-get install wget --yes \
     && apt-get install software-properties-common --yes \
     && apt-get install curl --yes \
@@ -16,6 +17,9 @@ RUN apt-get update \
     && apt-get install lyx --yes \
     && rm -rf /var/lib/apt/lists/* \
     && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
+
+# Make lyx robust to shared library error that ocurred on Sherlock (https://stackoverflow.com/questions/63627955/cant-load-shared-library-libqt5core-so-5)
+RUN strip --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so.5
 
 ############### install Conda
 # instructions from https://stackoverflow.com/questions/64090326/bash-script-to-install-conda-leads-to-conda-command-not-found-unless-i-run-b
@@ -55,7 +59,7 @@ WORKDIR /home/statauser/template
 USER statauser:stata
 
 # Initialize conda and restart shell
-RUN conda init
+RUN conda init --all
 RUN exec bash
 
 # run the master file

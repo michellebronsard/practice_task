@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
-Makelog started: 2022-08-31 08:33:04
+Makelog started: 2022-09-01 21:10:26
 Working directory: /home/statauser/template/data
 --------------------------------------------------------------------------------
 Input links successfully created!
@@ -18,6 +18,6 @@ WARNING! Certain files tracked by git exceed the config size limit (0.5 MB). See
 /home/statauser/template/data/output/data_cleaned.csv
 /home/statauser/template/data/output/data_merged.csv
 --------------------------------------------------------------------------------
-Makelog ended: 2022-08-31 08:33:19
+Makelog ended: 2022-09-01 21:10:42
 Working directory: /home/statauser/template/data
 --------------------------------------------------------------------------------
