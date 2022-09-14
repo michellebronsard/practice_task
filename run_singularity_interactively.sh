@@ -6,4 +6,5 @@ GITHUB_KEY="/home/users/${USER}/.ssh" # Default SSH file name if following Githu
 DROPBOX="/oak/stanford/groups/gentzkow/${USER}/Dropbox" # Change to Dropbox folder name
 
 singularity shell --bind "${STATALIC}":/usr/local/stata/stata.lic,"${DROPBOX}":/home/statauser/dropbox,"${GITHUB_KEY}":/home/statauser/.ssh,"$(pwd)":/home/statauser/template /home/groups/gentzkow/jccp/simg/template_latest.sif 
+# Run source /home/statauser/miniconda3/etc/profile.d/conda.sh
 echo "Container removed"
